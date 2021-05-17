@@ -1,0 +1,72 @@
+#pop_up_dsgn{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 10, 0.0 , 0 , 1 ); 
+}
+
+#pan_wind{
+  -fx-border-color: grey;
+  -fx-border-width: 0 0 1 0;
+}
+
+.submit{
+	-fx-font-size: 15;
+	-fx-border-radius: 4;
+	-fx-background-color: #48AE66;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+	-fx-border-color:none;	
+}
+.submit:hover{
+	-fx-background-color:#0FA039;
+}
+#suivant{
+	-fx-font-size: 15;
+	-fx-border-radius: 4;
+	-fx-background-color: #6899CA;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+	-fx-border-color:none;	
+}
+#suivant:hover{
+	-fx-background-color:#3983CE;
+}
+.reset{
+	-fx-font-size: 15;
+	-fx-border-radius: 4;
+	-fx-background-color: #EB7070;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+	-fx-border-color:none;	
+}
+.reset:hover{
+	-fx-background-color:#C6273D;
+}
+
+.select{
+	-fx-font-size: 15px;
+}
+.select .list-cell:hover{
+	-fx-background-color:#4dad58;
+}
+
+#searchB{
+	 -fx-background-color:#C47E2E;
+	 -fx-faint-focus-color:transparent;
+	 -fx-border-width:0 1;
+	 -fx-border-color:#C47E2E;
+	}
+#searchF{
+	-fx-text-box-border:transparent;
+	-fx-focus-color:none;
+	-fx-background-color:white;
+	-fx-border-width:1px;
+}
+
+.button_Acc{
+	-fx-background-color: #5F5D73;
+	-fx-border-width:0;
+	-fx-border-color:white;
+	-fx-border-radius:0;
+}
+.button_Acc:hover{
+	-fx-background-color: #6C6B75;
+}

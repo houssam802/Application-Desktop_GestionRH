@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="stackpane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_Recrutement.RecrutementController">
+   <children>
+      <ScrollPane focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-insets: 0;">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-padding: 0 30 20 0;">
+               <children>
+                        <Label fx:id="emailErreur" layoutX="214.0" layoutY="213.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="210.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="prenomErreur" layoutX="214.0" layoutY="143.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="140.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nomErreur" layoutX="214.0" layoutY="72.0" stylesheets="" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="70.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="36.0" prefHeight="35.0" prefWidth="58.0" styleClass="inp" text="Nom" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="30.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="191.0" prefHeight="35.0" prefWidth="58.0" styleClass="inp" text="Email" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="170.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="472.0" layoutY="72.0" prefHeight="35.0" prefWidth="172.0" styleClass="inp" text="Date d'embauche" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="30.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="401.0" layoutY="321.0" textFill="#d32337">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="submit" layoutX="814.0" layoutY="538.0" onAction="#ActionSubmit" styleClass="submit" text="Submit" AnchorPane.topAnchor="600.0">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="reset" layoutX="715.0" layoutY="538.0" onAction="#ActionReset" styleClass="reset" text="Reset" AnchorPane.topAnchor="600.0">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="Nom" focusColor="#4dad58" focusTraversable="false" layoutX="214.0" layoutY="35.0" prefHeight="30.0" prefWidth="220.0" promptText="Nom" styleClass="field" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="30.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Adresse_Gmail" focusColor="#4dad58" focusTraversable="false" layoutX="214.0" layoutY="184.0" prefHeight="30.0" prefWidth="220.0" promptText="Email" styleClass="field" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="170.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Date_Embauche" focusColor="#4dad58" focusTraversable="false" layoutX="661.0" layoutY="72.0" prefHeight="30.0" prefWidth="220.0" promptText="JJ/MM/AAAA" styleClass="field" AnchorPane.leftAnchor="670.0" AnchorPane.topAnchor="30.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label alignment="BOTTOM_LEFT" layoutX="471.0" layoutY="131.0" prefHeight="35.0" prefWidth="76.0" styleClass="inp" text="Contrat" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="100.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="type_Contract" focusColor="#4dad58" focusTraversable="false" layoutX="661.0" layoutY="135.0" onAction="#ActionContrat" prefHeight="25.0" prefWidth="220.0" promptText="Type de Contrat" styleClass="select" AnchorPane.leftAnchor="670.0" AnchorPane.topAnchor="100.0" />
+                        <JFXTextField fx:id="Date_Fin_Contract" focusColor="#4dad58" focusTraversable="false" layoutX="661.0" layoutY="191.0" prefHeight="30.0" prefWidth="220.0" promptText="JJ/MM/AAAA" styleClass="field" AnchorPane.leftAnchor="670.0" AnchorPane.topAnchor="170.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="471.0" layoutY="188.0" prefHeight="35.0" prefWidth="190.0" styleClass="inp" text="Date de fin de contrat" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="170.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="108.0" prefHeight="35.0" prefWidth="100.0" styleClass="inp" text="Prénom" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="100.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="Prenom" focusColor="#4dad58" focusTraversable="false" layoutX="214.0" layoutY="107.0" prefHeight="30.0" prefWidth="220.0" promptText="Prénom" styleClass="field" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="100.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="252.0" prefHeight="35.0" prefWidth="58.0" styleClass="inp" text="CIN" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="240.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="Numero_CIN" focusColor="#4dad58" focusTraversable="false" layoutX="214.0" layoutY="252.0" prefHeight="30.0" prefWidth="220.0" promptText="CIN" styleClass="field" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="240.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="Tel_Personnel" focusColor="#4dad58" focusTraversable="false" layoutX="214.0" layoutY="319.0" prefHeight="30.0" prefWidth="220.0" promptText="+212XXXXXXXXX" styleClass="field" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="310.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="314.0" prefHeight="35.0" prefWidth="190.0" styleClass="inp" text="Numéro de téléphone" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="310.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="396.0" prefHeight="35.0" prefWidth="158.0" styleClass="inp" text="Situation Familiale" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="380.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="situation_Familiale" focusColor="#4dad58" focusTraversable="false" layoutX="214.0" layoutY="398.0" prefHeight="25.0" prefWidth="220.0" promptText="Situation" styleClass="select" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="380.0" />
+                        <Label alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="449.0" prefHeight="35.0" prefWidth="158.0" styleClass="inp" text="Nombre d'enfants" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="450.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nombre_Enfant" focusColor="#4dad58" focusTraversable="false" layoutX="214.0" layoutY="447.0" prefHeight="30.0" prefWidth="220.0" styleClass="field" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="450.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXCheckBox fx:id="homme" focusTraversable="false" layoutX="210.0" layoutY="520.0" onAction="#ActionCheck" text="Homme" AnchorPane.topAnchor="600.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="femme" focusTraversable="false" layoutX="354.0" layoutY="520.0" onAction="#ActionCheck" text="Femme" AnchorPane.topAnchor="600.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <Label layoutX="24.0" layoutY="516.0" prefHeight="35.0" prefWidth="158.0" styleClass="inp" text="Sexe" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="590.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="472.0" layoutY="250.0" prefHeight="35.0" prefWidth="84.0" styleClass="inp" text="Fonction" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="240.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="Titre" focusColor="#4dad58" focusTraversable="false" layoutX="661.0" layoutY="252.0" prefHeight="30.0" prefWidth="220.0" promptText="Poste" styleClass="field" AnchorPane.leftAnchor="670.0" AnchorPane.topAnchor="240.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="471.0" layoutY="313.0" prefHeight="35.0" prefWidth="76.0" styleClass="inp" text="Salaire" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="310.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="salaire" focusColor="#4dad58" focusTraversable="false" layoutX="661.0" layoutY="315.0" prefHeight="30.0" prefWidth="220.0" promptText="(DH)" styleClass="field" AnchorPane.leftAnchor="670.0" AnchorPane.topAnchor="310.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label fx:id="cinErreur" layoutX="214.0" layoutY="279.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="280.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="numTelErreur" layoutX="214.0" layoutY="352.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="350.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="SitErreur" layoutX="214.0" layoutY="405.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="420.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="NbrEnfErreur" layoutX="214.0" layoutY="494.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="490.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateEMErreur" layoutX="673.0" layoutY="74.0" textFill="#d32337" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="70.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="contratErreur" layoutX="675.0" layoutY="130.0" textFill="#d32337" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="140.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateFinCErreur" layoutX="677.0" layoutY="218.0" textFill="#d32337" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="210.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fonctionErreur" layoutX="683.0" layoutY="278.0" textFill="#d32337" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="280.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="salaireErreur" layoutX="673.0" layoutY="349.0" textFill="#d32337" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="350.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sexeErreur" layoutX="215.0" layoutY="563.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="630.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="departement" focusColor="#4dad58" focusTraversable="false" layoutX="713.0" layoutY="392.0" prefHeight="25.0" prefWidth="220.0" styleClass="select" AnchorPane.leftAnchor="670.0" AnchorPane.topAnchor="380.0" />
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="478.0" layoutY="384.0" prefHeight="35.0" prefWidth="111.0" styleClass="inp" text="Département" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="380.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" layoutX="-16.0" layoutY="517.0" prefHeight="35.0" prefWidth="190.0" styleClass="inp" text="Date de naissance" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="520.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="Date_naissance" focusColor="#4dad58" focusTraversable="false" layoutX="210.0" layoutY="520.0" prefHeight="30.0" prefWidth="220.0" promptText="JJ/MM/AAAA" styleClass="field" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="520.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label fx:id="dateNaissErreur" layoutX="209.0" layoutY="562.0" textFill="#d32337" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="560.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXButton id="suivant" fx:id="suivant" layoutX="811.0" layoutY="556.0" onAction="#ActionSuivant" text="Suivant" visible="false" AnchorPane.topAnchor="600.0">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

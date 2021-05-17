@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="myPan1" maxHeight="267.0" maxWidth="454.0" minHeight="215.0" minWidth="454.0" prefHeight="267.0" prefWidth="454.0" style="-fx-background-color: #302E3E; -fx-border-image-width: 2; -fx-border-color: #393077;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_Login.LoginController">
+   <children>
+      <AnchorPane fx:id="pane_window" prefHeight="25.0" prefWidth="454.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXTextField fx:id="mytxt1" blendMode="SRC_ATOP" focusColor="WHITE" focusTraversable="false" labelFloat="true" layoutX="52.0" layoutY="77.0" prefHeight="26.0" prefWidth="210.0" promptText="Nom d'utilisateur" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.topAnchor="77.0">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <Label fx:id="mylb1" layoutX="270.0" layoutY="77.0" styleClass="lablerr" textFill="#f54949" AnchorPane.topAnchor="86.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="mylb2" layoutX="270.0" layoutY="142.0" styleClass="lablerr" textFill="#f54949" AnchorPane.topAnchor="151.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <JFXPasswordField fx:id="myPwdtxt" focusColor="WHITE" focusTraversable="false" labelFloat="true" layoutX="52.0" layoutY="142.0" prefHeight="26.0" prefWidth="210.0" promptText="Mot De Passe" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.topAnchor="142.0">
+         <font>
+            <Font size="14.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="mybut1" buttonType="RAISED" focusTraversable="false" layoutX="326.0" layoutY="204.0" onAction="#Login" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: white; -fx-border-width: 0;" text="Login" textFill="#302e3e">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_Task.Tasks_inputs">
+   <content>
+      <AnchorPane fx:id="myPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0">
+         <children>
+            <JFXTextField fx:id="nom_Task" focusTraversable="false" layoutX="146.0" layoutY="127.0" prefHeight="25.0" prefWidth="193.0" promptText="Task" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="127.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="statut_Task" focusTraversable="false" layoutX="146.0" layoutY="216.0" prefHeight="25.0" prefWidth="193.0" promptText="Statut" styleClass="select" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="216.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXTextField fx:id="date_Debut_Task" focusTraversable="false" layoutX="146.0" layoutY="296.0" prefHeight="25.0" prefWidth="193.0" promptText="JJ/MM/AAAA" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="296.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="date_Fin_Task" focusTraversable="false" layoutX="146.0" layoutY="376.0" prefHeight="25.0" prefWidth="193.0" promptText="JJ/MM/AAAA" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="376.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="description_Task" focusTraversable="false" layoutX="426.0" layoutY="216.0" prefHeight="185.0" prefWidth="315.0" style="-fx-background-color: #dddddd; -fx-border-width: 0px;" AnchorPane.leftAnchor="426.0" AnchorPane.topAnchor="216.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextArea>
+            <Label layoutX="32.0" layoutY="131.0" prefHeight="25.0" prefWidth="63.0" text="Task" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="131.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="220.0" prefHeight="25.0" prefWidth="53.0" text="Statut" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="220.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="299.0" text="Date debut Task" wrapText="true" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="299.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="380.0" text="Date fin Task" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="380.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="426.0" layoutY="161.0" prefHeight="25.0" prefWidth="83.0" text="Description" AnchorPane.leftAnchor="426.0" AnchorPane.topAnchor="161.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_Submit" layoutX="645.0" layoutY="397.0" onAction="#action_submit" styleClass="submit" text="Submit" textFill="#171b19" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="45.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_reset" layoutX="550.0" layoutY="397.0" onAction="#action_reset" styleClass="reset" text="Reset" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="170.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="err_nom_Task" layoutX="146.0" layoutY="169.0" textFill="#bb2626" wrapText="true" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="169.0" />
+            <Label fx:id="err_statut_Task" layoutX="146.0" layoutY="258.0" textFill="#bb2626" wrapText="true" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="258.0" />
+            <Label fx:id="err_date_Debut_Task" layoutX="146.0" layoutY="338.0" textFill="#bb2626" wrapText="true" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="338.0" />
+            <Label fx:id="err_Date_fin_Task" layoutX="146.0" layoutY="418.0" textFill="#bb2626" wrapText="true" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="418.0" />
+            <Label fx:id="err_Description_Task" layoutX="426.0" layoutY="419.0" textFill="#bb2626" wrapText="true" AnchorPane.leftAnchor="426.0" AnchorPane.topAnchor="419.0" />
+            <Label layoutX="32.0" layoutY="56.0" text="Responsable" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="56.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="err_txt_Personnel" layoutX="146.0" layoutY="94.0" textFill="#bb2626" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="94.0" />
+            <JFXComboBox fx:id="box_Personnel" focusTraversable="false" layoutX="155.0" layoutY="52.0" prefHeight="25.0" prefWidth="193.0" promptText="Responsable" styleClass="select" AnchorPane.leftAnchor="146.0" AnchorPane.topAnchor="52.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
