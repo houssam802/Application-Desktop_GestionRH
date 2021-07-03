@@ -1,9 +1,9 @@
-# Application-Desktop_GestionRH
-  Développer une application Desktop (avec javaFX) permettant de faciliter les procédures de 3 fonctions essentielles des ressources humaines et à la mise en place de la stratégie 
-et au pilotage de la performance ; gestion de recrutement, gestion de planning et gestion de compétences (évaluation des compétences) .
+# Application-Desktop_HRM
+  Develop a Desktop application (with javaFX) to facilitate the procedures of 3 essential functions of human resources , and the implementation of the strategy 
+and performance management; recruitment management, planning management and skills management (skills assessment).
 
-  Pour l’identification :
+  For identification :
       ///houssam : login
 
-BIBLIOTHÉQUES : Lombok ,JFoenix ,SQLite JDBC .
+LIBRARIES : Lombok ,JFoenix ,SQLite JDBC .
 FRAMEWORKS : Bean validation 2.0 ( JSR 380 ),JavaFX .
